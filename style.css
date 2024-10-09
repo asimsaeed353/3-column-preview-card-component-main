@@ -1,0 +1,157 @@
+:root {
+  /* Colors */
+  /* * Primary * */
+  --clr-primary-oragne: hsl(31, 77%, 52%);
+  --clr-primary-cyan-600: hsl(184, 100%, 22%);
+  --clr-primary-cyan-900: hsl(179, 100%, 13%);
+
+  /* * Neutral * */
+  --clr-neu-para: hsla(0, 0%, 100%, 0.75);
+  --clr-neu-gray: hsl(0, 0%, 95%);
+
+  /* Typography */
+
+  /* * Font Size * */
+  --fs-p: 0.75rem;
+
+  /* * Font Families * */
+  --ff-primary: "Lexend Deca", "serif";
+  --ff-secondary: "Big Shoulders Display", "serif";
+
+  /* * Font Weights * */
+  --fw-p-400: 400;
+  --fw-s-700: 700;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-neu-para);
+  line-height: 1.5;
+  word-spacing: 0.15rem;
+}
+
+.main {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  padding: 2rem;
+  color: var(--clr-neu-para);
+}
+
+.car-title {
+  margin: 1rem auto;
+  color: var(--clr-neu-gray);
+  font-size: 1.75rem;
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+}
+
+.car-description {
+  font-family: var(--ff-primary);
+  /* font-size: var(--fs-p); */
+  font-size: var(--fs-p);
+  font-weight: var(--fw-p-400);
+  margin-bottom: 4rem;
+}
+
+.car-icon {
+  width: 50px;
+}
+
+.card button {
+  padding: 0.57rem 1.5rem;
+  border: 2px solid var(--clr-neu-gray);
+  background-color: var(--clr-neu-gray);
+  border-radius: 20px;
+  font-size: var(--fs-p);
+
+  cursor: pointer;
+}
+
+.card button:active,
+.card button:hover {
+  background-color: transparent;
+}
+
+.card:nth-child(1) button {
+  color: var(--clr-primary-oragne);
+}
+
+.card:nth-child(2) button {
+  color: var(--clr-primary-cyan-600);
+}
+
+.card:nth-child(3) button {
+  color: var(--clr-primary-cyan-900);
+}
+
+.card:nth-child(1) button:active,
+.card:nth-child(1) button:hover,
+.card:nth-child(2) button:active,
+.card:nth-child(2) button:hover,
+.card:nth-child(3) button:active,
+.card:nth-child(3) button:hover {
+  color: var(--clr-neu-gray);
+}
+
+.bgcolor-bright-orange {
+  flex: 1;
+  border-radius: 5px 0px 0px 5px;
+  background-color: var(--clr-primary-oragne);
+}
+
+.bgcolor-cyan {
+  flex: 1;
+  background-color: var(--clr-primary-cyan-600);
+}
+
+.bgcolor-dark-cyan {
+  flex: 1;
+  border-radius: 0px 5px 5px 0px;
+  background-color: var(--clr-primary-cyan-900);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 39em) {
+  .main {
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .car-description {
+    margin-bottom: 1.5rem;
+  }
+
+  .bgcolor-bright-orange {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .bgcolor-dark-cyan {
+    border-radius: 0px 0px 5px 5px;
+  }
+}
+
+@media (max-width: 52em) {
+  .main {
+    /* flex-direction: column; */
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  .car-description {
+    margin-bottom: 1.5rem;
+  }
+}
