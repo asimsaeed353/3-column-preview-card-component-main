@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-3-column-preview-card-component-using-css-7BjYGo8MtU)
-- Live Site URL: [Live site](https://github.com/asimsaeed353/3-column-preview-card-component-main)
+- Live Site URL: [Live site](https://asimsaeed353.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
